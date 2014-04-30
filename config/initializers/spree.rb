@@ -11,4 +11,5 @@ Spree.config do |config|
   # config.site_name = "Spree Demo Site"
 end
 
-Spree.user_class = "Spree::LegacyUser"
+Spree.user_class = "Spree::User"
+# orig : changed to work with devise! Spree.user_class = "Spree::LegacyUser"

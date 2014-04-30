@@ -51,3 +51,15 @@ gem 'spree', github: 'spree/spree', branch: '2-2-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-2-stable'
 
 
+group :development, :test do
+  # testing 
+  gem 'rspec-rails'
+  # Stop Versioning Rails Secret Tokens
+  # https://gist.github.com/cjolly/6265302
+  gem 'dotenv-rails'
+  # gem for debugging
+  gem 'pry'
+  gem 'pry-debugger'
+  gem 'simplecov', :require => false
+  gem 'factory_girl_rails'
+end
